@@ -28,7 +28,8 @@ jobs:
       #if: contains(github.repository, 'node')
       run: |
         cp central-configs/node/.editorconfig ./
-        npm install
+        cd node-linting-example
+        npm install -y
         npm install eslint prettier
         npx eslint .
         npx prettier --check .
