@@ -27,7 +27,7 @@ jobs:
     - name: Copy and Install Node Lint Configs
       #if: contains(github.repository, 'node')
       run: |
-        cp central-configs/node/* ./
+        cp central-configs/node/.editorconfig ./
         npm install
         npm install eslint prettier
         npx eslint .
