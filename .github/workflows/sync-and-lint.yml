@@ -21,7 +21,7 @@ jobs:
     - name: Checkout Central Config Repository
       uses: actions/checkout@v2
       with:
-        repository: your-org/central-configs
+        repository: test-linting-formatting/central-configs
         path: central-configs
 
     - name: Copy .editorconfig
