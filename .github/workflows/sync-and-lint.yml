@@ -23,7 +23,7 @@ jobs:
 
 
     - name: Copy .editorconfig
-      run: cp central-configs/.editorconfig ./
+      run: cp central-configs/node/.editorconfig ./
 
     - name: Copy and Install Node Lint Configs
       #if: contains(github.repository, 'node')
