@@ -32,7 +32,7 @@ jobs:
         npm install -y
         npm install eslint prettier
         npx eslint .
-        npx prettier --check .
+        npx prettier --write .
 
     - name: Commit and Push Changes
       run: |
